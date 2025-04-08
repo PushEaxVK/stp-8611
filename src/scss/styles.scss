@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import './header.scss';
-@import './vite-promo.scss';
+@import './menu.scss';
+@import './home.scss';
+@import './overview.scss';
+@import './features.scss';
+@import './play.scss';
+@import './game.scss';
+@import './sound.scss';
+@import './developers.scss';
+@import './speedrun.scss';
+@import './secrets.scss';
+@import './footer.scss';
+@import './cookies.scss';
 
 :root {
-  font-family: 'Poppins', sans-serif;
+  @include poppins(400);
   font-size: 14px;
   line-height: 1.14;
-  font-weight: 400;
 
   color: #242424;
   background-color: #fffefe;

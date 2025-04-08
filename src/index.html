@@ -2,22 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon16x16.png" sizes="16x16" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon500x500.png"
+      sizes="500x500"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Juicy Crush – A refreshing match-3 puzzle game where you match, smash, and squeeze fruits to solve exciting puzzles!"
+    />
+    <meta
+      name="keywords"
+      content="Juicy Crush, match-3 puzzle, fruit game, relaxing puzzle, brain teaser, casual game, leaderboard challenge"
+    />
+    <meta name="author" content="LMKS" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://juicycrush.site" />
+    <title>Juicy Crush – Match, Smash & Squeeze the Fun!</title>
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <load src="./partials/header.html" />
+    <load src="./partials/menu.html" />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+    <main>
+      <load src="./partials/home.html" />
+      <load src="./partials/overview.html" />
+      <load src="./partials/features.html" />
+      <load src="./partials/play.html" />
+      <load src="./partials/game.html" />
+      <load src="./partials/sounds.html" />
+      <load src="./partials/developers.html" />
+      <load src="./partials/speedrun.html" />
+      <load src="./partials/secrets.html" />
+    </main>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <load src="./partials/footer.html" />
+    <load src="./partials/cookies.html" />
 
     <script type="module" src="./main.js"></script>
   </body>
