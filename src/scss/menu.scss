@@ -1,3 +1,19 @@
 .mobile-menu {
   background-color: #aec6cf;
+  width: 320px;
+  height: 538px;
+  margin: auto;
+}
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+  align-items: center;
+  width: 320px;
 }
