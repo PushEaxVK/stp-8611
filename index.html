@@ -2,82 +2,279 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/stp-8611/favicon.svg" />
+    <link rel="icon" type="image/png" href="/stp-8611/favicon16x16.png" sizes="16x16" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/stp-8611/favicon500x500.png"
+      sizes="500x500"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Juicy Crush – A refreshing match-3 puzzle game where you match, smash, and squeeze fruits to solve exciting puzzles!"
+    />
+    <meta
+      name="keywords"
+      content="Juicy Crush, match-3 puzzle, fruit game, relaxing puzzle, brain teaser, casual game, leaderboard challenge"
+    />
+    <meta name="author" content="LMKS" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://juicycrush.site" />
+    <title>Juicy Crush – Match, Smash & Squeeze the Fun!</title>
     
-    <script type="module" crossorigin src="/stp-8611/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/stp-8611/assets/index-3fb6d68b.css">
+    <script type="module" crossorigin src="/stp-8611/commonHelpers2.js"></script>
+    <link rel="stylesheet" href="/stp-8611/assets/styles-0685409c.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/stp-8611/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <header class="header" id="header">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/stp-8611/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <div class="header-container">
+      <a class="header-logo" href="#" title="logo">
+        <img
+          src="/stp-8611/assets/logo-7570bfa3.png"
+          srcset="/stp-8611/assets/logo-7570bfa3.png 1x, /stp-8611/assets/logo@2x-4c481657.png 2x"
+          alt=""
+        />
+      </a>
+      <button class="header-menu-button" id="menu-button" title="menu button">
+        <svg class="icon" width="48" height="48">
+          <use href="/stp-8611/assets/sprite-214c9f31.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
   </div>
+</header>
+
+    <!-- Mobile Menu -->
+<div id="menu" class="mobile-menu">
+  <div class="container">
+    <div class="mobile-menu-header">
+      <a class="header-logo" href="#">
+        <img
+          src="/stp-8611/assets/logo-7570bfa3.png"
+          srcset="/stp-8611/assets/logo-7570bfa3.png 1x, /stp-8611/assets/logo@2x-4c481657.png 2x"
+          alt=""
+        />
+      </a>
+      <button class="header-menu-button" id="menu-close" title="close menu">
+        <svg class="icon" width="48" height="48">
+          <use href="/stp-8611/assets/sprite-214c9f31.svg#icon-icon-x"></use>
+        </svg>
+      </button>
+    </div>
+    <ul id="mobile-menu-links">
+      <li><a href="#overview">Game Overview</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#play">How to Play</a></li>
+      <li><a href="#game">Day in the Game</a></li>
+      <li><a href="#sounds">The Art of Sound</a></li>
+      <li><a href="#developers">Developer’s Insights</a></li>
+      <li><a href="#speedrun">Speedrun Challenges</a></li>
+      <li><a href="#secrets">Easter Eggs & Hidden Secrets</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <main>
+      <section class="home" id="home">
+  <div class="container">
+    <h1><span>Juicy Crush</span> – Match, Smash & Squeeze the Fun!</h1>
+    <p>Experience the most refreshing match-3 puzzle game ever created!</p>
+    <button>GET IT ON Google Play</button>
+  </div>
 </section>
+
+      <section class="overview" id="overview">
+  <div class="container">
+    <h2>Game Overview</h2>
+    <h3>Welcome to Juicy Crush, the most refreshing match-3 puzzle game!</h3>
+    <p>
+      Dive into a world filled with vibrant fruits, exciting combos, and
+      explosive juice splashes. Solve puzzles, collect rewards, and master juicy
+      challenges in this addictively fun adventure!
+    </p>
+    <img src="" width="280" height="193" alt="game image" />
+  </div>
+</section>
+
+      <section class="features" id="features">
+  <div class="container">
+    <h2>Features</h2>
+    <ul>
+      <li>
+        <img src="" alt="bomb" />
+        <h3>Fruit-Blasting Gameplay</h3>
+        <p>Match fruits and watch them explode in a splash of color!</p>
+      </li>
+      <li>
+        <img src="" alt="lightning" />
+        <h3>Powerful Boosters</h3>
+        <p>
+          Unlock special fruit combos and crushing hammers to clear tricky
+          levels.
+        </p>
+      </li>
+      <li>
+        <img src="" alt="book" />
+        <h3>Engaging Story Mode</h3>
+        <p>Progress through hundreds of levels with exciting challenges.</p>
+      </li>
+      <li>
+        <img src="" alt="star" />
+        <h3>Daily & Weekly Events</h3>
+        <p>Compete in limited-time puzzles and earn sweet rewards.</p>
+      </li>
+      <li>
+        <img src="" alt="wifi off" />
+        <h3>Offline Play</h3>
+        <p>Enjoy Juicy Crush anywhere, anytime—no internet required!</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="play" id="play">
+  <div class="container">
+    <h1>How to Play</h1>
+    <ul>
+      <li>
+        <img src="" alt="1" />
+        <h3>Match 3 or More Fruits</h3>
+        <p>Swap them to create juicy combos and clear obstacles.</p>
+      </li>
+      <li>
+        <img src="" alt="2" />
+        <h3>Trigger Special Power-Ups</h3>
+        <p>Use boosters like the Fruit Bomb and Rainbow Splash!</p>
+      </li>
+      <li>
+        <img src="" alt="3" />
+        <h3>Complete Level Challenges</h3>
+        <p>Hit score targets, collect ingredients, and clear jelly blocks.</p>
+      </li>
+      <li>
+        <img src="" alt="4" />
+        <h3>Unlock New Stages</h3>
+        <p>Progress through fruit-themed worlds with increasing difficulty.</p>
+      </li>
+      <li>
+        <img src="" alt="5" />
+        <h3>Compete & Win</h3>
+        <p>Climb the leaderboard and show off your puzzle skills!</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="game" id="game">
+  <div class="container">
+    <h2>Day in the Game</h2>
+    <p>What’s a typical day like in <span>Juicy Crush?</span></p>
+    <ul>
+      <li>
+        <img src="" alt="coins" />
+        <h3>Morning Rewards</h3>
+        <p>Collect your daily bonus and power-ups</p>
+      </li>
+      <li>
+        <img src="" alt="star" />
+        <h3>Daily Challenges</h3>
+        <p>Complete special missions for extra rewards</p>
+      </li>
+      <li>
+        <img src="" alt="berry" />
+        <h3>Night Mode Gaming</h3>
+        <p>Special night-time rewards</p>
+      </li>
+    </ul>
+    <ul>
+      <li><img src="" alt="bonus spin" /></li>
+      <li><img src="" alt="level complete" /></li>
+      <li><img src="" alt="daily bonus" /></li>
+    </ul>
+  </div>
+</section>
+
+      <section class="sounds" id="sounds">
+  <div class="container">
+    <h2>The Art of Sound</h2>
+    <p>
+      Every sound in <span>Juicy Crush</span> is designed to enhance immersion—
+      from the crisp crunch of fruits to the explosion of boosters!
+    </p>
+    <button>Listen to Game Sounds</button>
+  </div>
+</section>
+
+      <section class="developers" id="developers">
+  <div class="container">
+    <h2>Developer’s Insights</h2>
+    <p>
+      How did <span>Juicy Crush</span> come to life? Our developers were
+      inspired by the joy of fruit markets, vibrant summer colors, and the
+      thrill of solving puzzles. Learn about the creative process, hidden game
+      mechanics, and what’s next for the game!
+    </p>
+  </div>
+</section>
+
+      <section class="speedrun" id="speedrun">
+  <div class="container">
+    <h2>Speedrun Challenges</h2>
+    <p>
+      Think you're fast? <span>Juicy Crush</span> features time-limited speedrun
+      levels where players race against the clock to complete objectives. Only
+      the quickest and sharpest puzzle solvers will claim the top spots!
+    </p>
+    <ul>
+      <li>
+        <p>01:23</p>
+        <p>Best Time</p>
+      </li>
+      <li>
+        <p># 1</p>
+        <p>Global Rank</p>
+      </li>
+      <li>
+        <p>1,234</p>
+        <p>Attempts</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="secrets" id="secrets">
+  <div class="container">
+    <h2>Easter Eggs & Hidden Secrets</h2>
+    <p>
+      Did you know Juicy Crush has secret fruit combos that trigger unique
+      animations? Discover rare matches, hidden bonus levels, and even a few
+      developer inside jokes scattered throughout the game!
+    </p>
+    <button>Start Discovering</button>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+  <div class="container">
+    <img src="" alt="logo" />
+    <h2>Juicy Crush</h2>
+    <ul>
+      <li><a href="">Privacy Policy</a></li>
+      <li><a href="">Terms and Conditions</a></li>
+      <li><a href="">Cookies Policy</a></li>
+    </ul>
+    <p>© 2025 Juicy Crush. All rights reserved juicycrush.site</p>
+  </div>
+</footer>
+
+    <div class="cookies" id="coolies">
+  <div class="container">Cookies</div>
+</div>
 
 
     
