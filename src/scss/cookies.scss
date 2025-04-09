@@ -41,6 +41,10 @@
     span {
       @include gradient-text();
     }
+
+    &:active {
+      background: $_decline_clicked padding-box, $_gradient_button border-box;
+    }
   }
 
   @media (min-width: 1200px) {

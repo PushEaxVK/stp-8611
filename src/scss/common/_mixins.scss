@@ -47,4 +47,8 @@ screen types:
   @include font(16, 23);
   text-align: center;
   color: #fff;
+
+  &:active {
+    background-image: $_gradient_button_clicked;
+  }
 }
