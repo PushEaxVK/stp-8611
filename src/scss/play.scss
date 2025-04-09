@@ -1,3 +1,104 @@
 .play {
-  background-color: #ffd8b1;
+  background-color: $_light_bg_color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  h2 {
+    @include poppins(700);
+    @include font(24, 30);
+    margin-bottom: 24px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    li {
+      width: 257px;
+      height: 188px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      span {
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include poppins(700);
+        @include font(30, 43);
+        justify-self: center;
+        margin-bottom: 16px;
+      }
+
+      h3 {
+        @include poppins(700);
+        @include font(16, 24);
+        color: #000;
+        margin-bottom: 8px;
+      }
+
+      p {
+        @include poppins(400);
+        @include font(14, 16);
+        color: #4b5563;
+      }
+    }
+  }
+
+  .play-span-1 {
+    background-color: #ffedd5;
+    color: #f97316;
+  }
+  .play-span-2 {
+    background-color: #fce7f3;
+    color: #ed529f;
+  }
+  .play-span-3 {
+    background-color: #ede9fe;
+    color: #8b5cf6;
+  }
+  .play-span-4 {
+    background-color: #dbeafe;
+    color: #3b82f6;
+  }
+  .play-span-5 {
+    background-color: #d2f8d2;
+    color: #269d04;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url('../img/play/how-to-play.png'),
+      url('../img/play/level-complete.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(50% - 428px) 380px, calc(50% + 428px) 386px;
+    background-size: 243px 277px, 244px 280px;
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../img/play/how-to-play@2x.png'),
+        url('../img/play/level-complete@2x.png');
+    }
+
+    h2 {
+      @include font(36, 54);
+      margin-bottom: 40px;
+    }
+
+    ul {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
 }
