@@ -1,8 +1,11 @@
 <section class="game" id="game">
   <div class="container">
-    <h2>Day in the Game</h2>
-    <p>What’s a typical day like in <span>Juicy Crush?</span></p>
-    <ul>
+    <h2 class="game_h2">Day in the Game</h2>
+    <p class="game_h_p">
+      What’s a typical day like in
+      <span class="game_acc_text">Juicy Crush</span>?
+    </p>
+    <!-- <ul>
       <li>
         <img src="" alt="coins" />
         <h3>Morning Rewards</h3>
@@ -18,11 +21,98 @@
         <h3>Night Mode Gaming</h3>
         <p>Special night-time rewards</p>
       </li>
-    </ul>
-    <ul>
-      <li><img src="" alt="bonus spin" /></li>
-      <li><img src="" alt="level complete" /></li>
-      <li><img src="" alt="daily bonus" /></li>
-    </ul>
+    </ul> -->
+    <div class="game_content">
+      <ul class="bonus-list">
+        <li class="game_li">
+          <img
+            srcset="./img/game/coins_m.png 1x, ./img/game/coins.png 2x"
+            src="./img/game/coins_m.png"
+            alt="coins"
+          />
+          <h3 class="game_li_h3">Morning Rewards</h3>
+          <p class="game_li_p">Collect your daily bonus and power-ups</p>
+        </li>
+
+        <li class="game_li">
+          <img
+            srcset="./img/game/star_m.png 1x, ./img/game/star.png 2x"
+            src="./img/game/star_m.png"
+            alt="star"
+          />
+          <h3 class="game_li_h3">Daily Challenges</h3>
+          <p class="game_li_p">Complete special missions for extra rewards</p>
+        </li>
+
+        <li class="game_li">
+          <img
+            srcset="./img/game/berry_m.png 1x, ./img/game/berry.png 2x"
+            src="./img/game/berry_m.png"
+            alt="berry"
+          />
+          <h3 class="game_li_h3">Night Mode Gaming</h3>
+          <p class="game_li_p">Special night-time rewards</p>
+        </li>
+      </ul>
+
+      <div class="game_div"></div>
+      <!-- <ul>
+        <li><img src="" alt="bonus spin" /></li>
+        <li><img src="" alt="level complete" /></li>
+        <li><img src="" alt="daily bonus" /></li>
+      </ul> -->
+      <div class="game_gallery">
+        <div class="game_gallery__item">
+          <picture>
+            <source
+              srcset="
+                ./img/game/dig_one_m.png    1x,
+                ./img/game/dig_one_m_x2.png 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="./img/game/dig_one.png 1x, ./img/game/dig_one_x2.png 2x"
+            />
+            <img src="./img/game/dig_one.png" alt="image one" />
+          </picture>
+        </div>
+
+        <div class="game_gallery__item">
+          <picture>
+            <source
+              srcset="
+                ./img/game/dig_two_m.png    1x,
+                ./img/game/dig_two_m_x2.png 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="./img/game/dig_two.png 1x, ./img/game/dig_two_x2.png 2x"
+            />
+            <img src="./img/game/dig_two.png" alt="image two" />
+          </picture>
+        </div>
+
+        <div class="game_gallery__item gallery__item--center">
+          <picture>
+            <source
+              srcset="
+                ./img/game/dig_three_m.png    1x,
+                ./img/game/dig_three_m_x2.png 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./img/game/dig_three.png    1x,
+                ./img/game/dig_three_x2.png 2x
+              "
+            />
+            <img src="./img/game/dig_three.png" alt="image three" />
+          </picture>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
