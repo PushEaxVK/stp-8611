@@ -12,4 +12,4 @@ $_gradient_button_clicked: linear-gradient(
   rgba(236, 72, 153, 0.7) 100%
 );
 $_gradient_decline: linear-gradient(90deg, #fff7ed 0%, #fdf2f8 100%);
-$_decline_clicked: #efefef;
+$_decline_clicked: linear-gradient(90deg, #efefef 0%, #efefef 100%);
