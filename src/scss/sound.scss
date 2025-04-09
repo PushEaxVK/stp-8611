@@ -1,3 +1,70 @@
 .sounds {
   background-color: #e0bbec;
 }
+
+// vk
+
+.sound {
+  border-radius: 12px;
+  width: 280px;
+  height: 299px;
+  background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.sound_h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2.08333;
+  text-align: center;
+  color: #fff;
+}
+
+.sound_p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5625;
+  text-align: center;
+  color: #fff;
+}
+
+.sound_cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 0px solid #e5e7eb;
+  border-radius: 12px;
+  width: 260px;
+  height: 56px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .sound {
+    border-radius: 12px;
+    width: 1008px;
+    height: 300px;
+    gap: 24px;
+  }
+  .sound_h2 {
+    font-size: 36px;
+    color: #fffefe;
+  }
+  .sound_p {
+    font-size: 20px;
+    line-height: 1.25;
+    color: #fffefe;
+  }
+  .sound_cta {
+    margin-top: 8px;
+  }
+}

@@ -38,8 +38,11 @@
 }
 
 @media (min-width: 1200px) {
+  .container {
+    padding-top: 80px;
+    padding-bottom: 98px;
+  }
   .over_h2 {
-    margin-top: 80px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 36px;
@@ -66,8 +69,8 @@
 
 .overview-bg {
   position: relative;
-  margin-top: 24px;
-  margin-bottom: 40px;
+  padding-top: 24px;
+  padding-bottom: 40px;
 }
 
 .image-ow {
@@ -98,7 +101,7 @@
 @media (min-width: 1200px) {
   .overview-bg {
     margin-top: 40px;
-    margin-bottom: 98px;
+    // margin-bottom: 98px;
   }
   .image-ow {
     width: 280px;
