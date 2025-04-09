@@ -30,3 +30,21 @@ screen types:
   font-weight: $weight;
   font-style: normal;
 }
+
+@mixin gradient-text() {
+  background-image: $_gradient_button;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin gradient-button() {
+  border-radius: 12px;
+  background-image: $_gradient_button;
+  border: none;
+  @include poppins(500);
+  @include font(16, 23);
+  text-align: center;
+  color: #fff;
+}
