@@ -24,7 +24,7 @@
     <title>Juicy Crush – Match, Smash & Squeeze the Fun!</title>
     
     <script type="module" crossorigin src="/stp-8611/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8611/assets/styles-d85d462c.css">
+    <link rel="stylesheet" href="/stp-8611/assets/styles-0d3ab3d1.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -141,14 +141,47 @@
 
       <section class="overview" id="overview">
   <div class="container">
-    <h2>Game Overview</h2>
-    <h3>Welcome to Juicy Crush, the most refreshing match-3 puzzle game!</h3>
-    <p>
+    <h2 class="over_h2">Game Overview</h2>
+    <h3 class="over_h3">
+      Welcome to <span class="over-text-accent">Juicy Crush</span>, the most
+      refreshing match-3 puzzle game!
+    </h3>
+    <p class="over_p">
       Dive into a world filled with vibrant fruits, exciting combos, and
       explosive juice splashes. Solve puzzles, collect rewards, and master juicy
       challenges in this addictively fun adventure!
     </p>
-    <img src="" width="280" height="193" alt="game image" />
+    <div class="overview-bg">
+      <!-- <img src="" width="280" height="193" alt="game image" /> -->
+      <picture>
+        <!-- from 1200px -->
+        <source
+          srcset="/stp-8611/assets/bg_over-85a45d75.jpg 1x, /stp-8611/assets/bg_over_x2-117d98f0.jpg 2x"
+          media="(min-width: 1200px)"
+        />
+
+        <!-- mob to 1199px -->
+        <source
+          srcset="/stp-8611/assets/bg_over_m-f92a5b1b.jpg 1x, /stp-8611/assets/bg_over_m_x2-c0377496.jpg 2x"
+          media="(max-width: 1199px)"
+        />
+
+        <!-- fallback -->
+        <img
+          src="/stp-8611/assets/bg_over_m-f92a5b1b.jpg"
+          alt="Overview image"
+          loading="lazy"
+        />
+      </picture>
+      <img
+          src="/stp-8611/assets/over_img-ce01ab83.png"
+          srcset="/stp-8611/assets/over_img-ce01ab83.png 1x, /stp-8611/assets/over_img_x2-e84fa5db.png 2x"
+          alt="Image 3"
+          class="image_over image-ow"
+        />
+        
+      </div>
+    </div>
   </div>
 </section>
 
