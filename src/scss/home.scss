@@ -1,3 +1,138 @@
 .home {
   background-color: #b5ead7;
 }
+
+// vk
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-content {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.text-accent {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 139%;
+  text-align: center;
+  background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 125%;
+  text-align: center;
+}
+.home-p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  color: #4b5563;
+}
+
+.home-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 0px solid #e5e7eb;
+  border-radius: 12px;
+  width: 280px;
+  height: 65px;
+  background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
+  margin-top: 8px;
+}
+
+.home-cta:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(249, 115, 22, 0.7) 0%,
+    rgba(236, 72, 153, 0.7) 100%
+  );
+}
+
+.home-cta-p {
+  border: 0px solid #e5e7eb;
+  width: 84px;
+  height: 36px;
+}
+
+.image-container {
+  position: relative;
+  display: block;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-1 {
+  position: relative;
+  z-index: 1;
+  width: 238px;
+  height: 253px;
+}
+
+.image-2 {
+  width: 499px;
+  height: 396px;
+  position: absolute;
+  top: 149px;
+  left: 4px;
+  z-index: 2;
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+  .image-container {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    width: 494px;
+    height: 351px;
+    gap: 24px;
+  }
+
+  .text-accent {
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  .home-h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 125%;
+    text-align: start;
+  }
+  .home-p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #4b5563;
+  }
+  .home-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0px solid #e5e7eb;
+    border-radius: 12px;
+    width: 184px;
+    height: 65px;
+    background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
+  }
+}
