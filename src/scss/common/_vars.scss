@@ -2,3 +2,14 @@ $_main_color: #242424;
 $_main_bg_color: rgba(255, 255, 255, 0.87);
 $_header_color: #747bff;
 $_header_accent_color: red;
+
+$_gradient_from: #f97316;
+$_gradient_to: #ec4899;
+$_gradient_button: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
+$_gradient_button_clicked: linear-gradient(
+  90deg,
+  rgba(249, 115, 22, 0.7) 0%,
+  rgba(236, 72, 153, 0.7) 100%
+);
+$_gradient_decline: linear-gradient(90deg, #fff7ed 0%, #fdf2f8 100%);
+$_decline_clicked: #efefef;
