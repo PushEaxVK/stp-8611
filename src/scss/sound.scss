@@ -68,3 +68,27 @@
     margin-top: 8px;
   }
 }
+
+.sound-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid #e5e7eb;
+  border-radius: 12px;
+  width: 272px;
+  height: 56px;
+  background: #fffefe;
+}
+.sound-cta-p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sound-cta:hover {
+  background: #efefef;
+}
