@@ -1,17 +1,14 @@
 .home {
-  background-color: #b5ead7;
+  background-color: #fff7ed;
+  background-image: $_gradient_decline;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 // vk
-
 .home-container {
   display: flex;
-  justify-content: space-between;
-}
-
-.home-content {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  gap: 20px;
 }
 
 .text-accent {
@@ -30,7 +27,9 @@
   font-size: 36px;
   line-height: 125%;
   text-align: center;
+  margin-bottom: 16px;
 }
+
 .home-p {
   font-family: var(--font-family);
   font-weight: 400;
@@ -38,18 +37,20 @@
   line-height: 139%;
   text-align: center;
   color: #4b5563;
+  margin-bottom: 32px;
 }
 
 .home-cta {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 12px;
   border: 0px solid #e5e7eb;
   border-radius: 12px;
   width: 280px;
   height: 65px;
+  flex-shrink: 0;
   background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
-  margin-top: 8px;
 }
 
 .home-cta:hover {
@@ -61,14 +62,22 @@
 }
 
 .home-cta-p {
-  border: 0px solid #e5e7eb;
-  width: 84px;
+  @include poppins(400);
+  @include font(12, 16);
+  color: #fff;
+  width: 85px;
   height: 36px;
+
+  span {
+    @include poppins(700);
+    @include font(14, 20);
+  }
 }
 
 .image-container {
   position: relative;
   display: block;
+  width: 494px;
 }
 
 .image {
@@ -82,14 +91,16 @@
   z-index: 1;
   width: 238px;
   height: 253px;
+  top: 0;
+  left: 141px;
 }
 
 .image-2 {
-  width: 499px;
-  height: 396px;
+  width: 494px;
+  height: 494px;
+  flex-shrink: 0;
   position: absolute;
-  top: 149px;
-  left: 4px;
+  top: 122px;
   z-index: 2;
 }
 
@@ -98,13 +109,20 @@
     display: none;
   }
 }
+
 @media (min-width: 1200px) {
+  .home {
+    height: 511px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .home-content {
     display: flex;
     flex-direction: column;
     width: 494px;
     height: 351px;
-    gap: 24px;
+    padding-top: 80px;
   }
 
   .text-accent {
@@ -113,24 +131,27 @@
   }
 
   .home-h1 {
-    font-weight: 500;
+    @include poppins(500);
     font-size: 48px;
     line-height: 125%;
     text-align: start;
+    margin-bottom: 24px;
+
+    .text-accent {
+      @include font(48, 60);
+    }
   }
+
   .home-p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 125%;
     color: #4b5563;
+    margin-bottom: 32px;
   }
+
   .home-cta {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 0px solid #e5e7eb;
-    border-radius: 12px;
     width: 184px;
     height: 65px;
     background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);

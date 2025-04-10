@@ -4,8 +4,6 @@ const refs = {
   close: document.querySelector('.menu-close-button'),
 };
 
-console.log(refs.headerMenuButton);
-
 function handleMenu(isOpen) {
   if (isOpen) {
     refs.menu.classList.remove('closed');
