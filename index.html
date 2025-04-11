@@ -24,19 +24,28 @@
     <title>Juicy Crush – Match, Smash & Squeeze the Fun!</title>
     
     <script type="module" crossorigin src="/stp-8611/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8611/assets/styles-171368db.css">
+    <link rel="stylesheet" href="/stp-8611/assets/styles-6f7fcf30.css">
   </head>
   <body>
     <header class="header" id="header">
   <div class="container">
     <div class="header-container">
-      <a class="header-logo" href="#" title="logo">
-        <img
-          src="/stp-8611/assets/logo-7570bfa3.png"
-          srcset="/stp-8611/assets/logo-7570bfa3.png 1x, /stp-8611/assets/logo@2x-4c481657.png 2x"
-          alt="Logo"
-          class="header-img"
-        />
+      <a class="header-logo" href="./" title="logo">
+        <picture class="header-img">
+          <source
+            srcset="/stp-8611/assets/logo-7570bfa3.png 1x, /stp-8611/assets/logo@2x-4c481657.png 2x"
+            media="(max-width: 1199px)"
+          />
+
+          <!-- Десктопна версія -->
+          <source
+            srcset="/stp-8611/assets/logo-desktop-3036f964.png 1x, /stp-8611/assets/logo-desktop@2x-329efd02.png 2x"
+            media="(min-width: 1200px)"
+          />
+
+          <!-- Фолбек для старих браузерів -->
+          <img src="./img/header/logo-desktop@2.png" alt="Logo" />
+        </picture>
       </a>
       <nav class="header_nav">
         <ul class="header_menu">
@@ -498,7 +507,7 @@
     </p>
     <!-- <button>Start Discovering</button> -->
     <a
-      class="home-cta"
+      class="home-cta secret-home-cta"
       target="_blank"
       href="https://play.google.com/store/apps/details?id=com.LMKS.JUICYCRUSH&hl=en&gl=us"
     >
@@ -512,13 +521,22 @@
     <footer class="footer" id="footer">
   <div class="container">
     <div class="footer-nav">
-      <a class="footer-logo" href="#" title="logo">
-        <img
-          src="/stp-8611/assets/logo-7570bfa3.png"
-          srcset="/stp-8611/assets/logo-7570bfa3.png 1x, /stp-8611/assets/logo@2x-4c481657.png 2x"
-          alt="Logo"
-          class="header-img"
-        />
+      <a class="footer-logo" href="./" title="logo">
+        <picture class="header-img">
+          <source
+            srcset="/stp-8611/assets/logo-7570bfa3.png 1x, /stp-8611/assets/logo@2x-4c481657.png 2x"
+            media="(max-width: 1199px)"
+          />
+
+          <!-- Десктопна версія -->
+          <source
+            srcset="/stp-8611/assets/logo-desktop-3036f964.png 1x, /stp-8611/assets/logo-desktop@2x-329efd02.png 2x"
+            media="(min-width: 1200px)"
+          />
+
+          <!-- Фолбек для старих браузерів -->
+          <img src="./img/header/logo-desktop@2.png" alt="Logo" />
+        </picture>
         <span>Juicy Crush</span>
       </a>
       <ul class="footer-list">
