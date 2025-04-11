@@ -1,0 +1,100 @@
+.cookies-policy {
+  background-image: $_gradient_decline;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .cookies-policy-button {
+    @include gradient-button();
+    width: 155px;
+    height: 47px;
+    margin-bottom: 24px;
+    @include font(18, 27);
+    display: block;
+    padding: 10px 24px;
+  }
+
+  .cookies-policy-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p {
+      @include poppins(400);
+      @include font(14, 21);
+      color: #000;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    a {
+      @include poppins(400);
+      @include font(14, 21);
+      color: #000;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+      overflow-wrap: anywhere;
+      // word-break: break-all;
+      word-break: break-word;
+      // white-space: normal;
+      // word-break: break-word;
+    }
+  }
+
+  h1 {
+    @include gradient-text();
+    @include poppins(600);
+    @include font(24, 36);
+  }
+
+  h2,
+  h3 {
+    @include poppins(600);
+    @include font(16, 24);
+    color: #000;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 24px;
+    @include poppins(400);
+    @include font(14, 21);
+    color: #000;
+  }
+
+  .cookies-policy-underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cookies-policy {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h1 {
+      @include font(36, 54);
+    }
+
+    .cookies-policy-block {
+      p {
+        @include font(16, 24);
+      }
+
+      a {
+        @include font(16, 24);
+      }
+    }
+
+    h2,
+    h3 {
+      @include font(18, 27);
+    }
+
+    ul {
+      @include font(16, 24);
+    }
+  }
+}
