@@ -4,25 +4,25 @@
 
 .speedrun_content {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .speed_h {
-  font-family: var(--font-family);
-  font-weight: 700;
+  @include poppins(700);
   font-size: 24px;
-  line-height: 208%;
+  line-height: 2.083;
   text-align: center;
-  color: var(--linel-1);
+  color: #000;
+  margin-bottom: 8px;
 }
 
 .speed_h_p {
-  font-family: var(--font-family);
-  font-weight: 400;
+  @include poppins(400);
   font-size: 16px;
-  line-height: 187%;
+  line-height: 1.875;
   text-align: center;
   color: #4b5563;
+  margin-bottom: 40px;
 }
 
 .speed_accent {
@@ -40,16 +40,16 @@
   border-radius: 12px;
   padding: 55px 62px;
   width: 281px;
-  height: 673px;
+  height: 678px;
   box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.1), 0 8px 10px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
 }
 
 .speed_li_h {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 60px;
+  @include poppins(700);
+  @include font(60, 72);
   text-align: center;
+  margin-bottom: 6px;
 }
 
 .speed1 {
@@ -65,12 +65,14 @@
 }
 
 .speed_li_p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
+  @include poppins(400);
+  @include font(16, 24);
   text-align: center;
   color: #4b5563;
+}
+
+.speed_ul li:first-child .speed_li_p {
+  line-height: 100%;
 }
 
 @media (min-width: 1200px) {
@@ -78,24 +80,25 @@
     padding-top: 80px;
     padding-bottom: 76px;
   }
+
   .speed_h {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 36px;
+    @include poppins(700);
+    @include font(36, 54);
     text-align: center;
-    color: var(--linel-1);
+    margin-bottom: 24px;
   }
+
   .speed_h_p {
-    font-family: var(--font-family);
-    font-weight: 400;
+    @include poppins(400);
     font-size: 20px;
     line-height: 150%;
     text-align: center;
     color: #4b5563;
-    // width: 836px;
-    margin-top: 24px;
+    padding-left: 86px;
+    padding-right: 86px;
     margin-bottom: 40px;
   }
+
   .speed_ul {
     flex-direction: row;
     justify-content: space-between;
