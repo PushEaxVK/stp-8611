@@ -13,6 +13,18 @@
   top: 0;
   left: 0;
   z-index: 2000;
+  opacity: 1;
+
+  transition-property: transform, opacity;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+  transition-delay: 0;
+
+  &.closed {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+  }
 }
 
 .mobile-menu-header {
@@ -93,8 +105,4 @@
   height: 100%;
   display: flex;
   justify-content: center;
-}
-
-.closed {
-  display: none;
 }
