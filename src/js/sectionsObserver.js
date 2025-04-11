@@ -19,20 +19,26 @@ const refs = {
   ],
 };
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.id;
-        refs.links.forEach(link => {
-          link[1].classList.toggle('active', link[0] === id);
-        });
-      }
-    });
-  },
-  {
-    threshold: 0.5,
-  }
-);
+function onScroll() {
+  let currentSectionId = null;
+  let minDistance = Infinity;
 
-refs.sections.forEach(section => observer.observe(section));
+  refs.sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    const distance = Math.abs(rect.top);
+
+    if (distance < minDistance && rect.top < window.innerHeight) {
+      minDistance = distance;
+      currentSectionId = section.id;
+    }
+  });
+
+  if (currentSectionId) {
+    refs.links.forEach(link => {
+      link[1].classList.toggle('active', link[0] === currentSectionId);
+    });
+  }
+}
+
+window.addEventListener('scroll', onScroll);
+window.addEventListener('load', onScroll);
