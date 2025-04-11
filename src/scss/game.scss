@@ -197,6 +197,11 @@
     width: 382px;
     padding-top: 22px;
   }
+
+  .game_li:not(:last-child) {
+    margin-bottom: 87px;
+  }
+
   .game_gallery {
     width: 382px;
   }
