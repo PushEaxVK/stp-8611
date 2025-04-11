@@ -2,12 +2,24 @@
   <div class="container">
     <div class="header-container">
       <a class="header-logo" href="./" title="logo">
-        <img
-          src="./img/header/logo.png"
-          srcset="./img/header/logo.png 1x, ./img/header/logo@2x.png 2x"
-          alt="Logo"
-          class="header-img"
-        />
+        <picture class="header-img">
+          <source
+            srcset="./img/header/logo.png 1x, ./img/header/logo@2x.png 2x"
+            media="(max-width: 1199px)"
+          />
+
+          <!-- Десктопна версія -->
+          <source
+            srcset="
+              ./img/header/logo-desktop.png    1x,
+              ./img/header/logo-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+
+          <!-- Фолбек для старих браузерів -->
+          <img src="./img/header/logo-desktop@2.png" alt="Logo" />
+        </picture>
       </a>
       <nav class="header_nav">
         <ul class="header_menu">
