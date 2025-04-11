@@ -30,6 +30,7 @@
   flex-direction: column;
   gap: 32px;
 }
+
 .page_p_p h1 {
   font-weight: 600;
   font-size: 24px;
@@ -38,9 +39,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .pp_first_p {
   margin-bottom: 42px;
 }
+
 .page_p_p h2 {
   font-weight: 600;
   font-size: 16px;
@@ -54,11 +57,13 @@
   color: #000;
   margin-bottom: 24px;
 }
+
 .page_p_p ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 24px;
 }
+
 .page_p_p li a {
   color: rgb(125, 125, 235);
   text-decoration: underline;
@@ -69,10 +74,12 @@
   .page_p_p h1 {
     font-size: 36px;
   }
+
   .page_p_p h2 {
     font-weight: 600;
     font-size: 18px;
   }
+
   .page_p_p p {
     font-weight: 400;
     font-size: 16px;

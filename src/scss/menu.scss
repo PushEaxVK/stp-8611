@@ -3,14 +3,11 @@
   padding: 0;
   margin-left: auto;
   margin-right: auto;
-  // height: 100%;
 }
 
 .mobile-menu {
   background-image: $_gradient_decline;
   width: 100%;
-  // height: 100%;
-  // min-height: 538px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -41,9 +38,7 @@
   gap: 24px;
   width: 235px;
   height: 360px;
-  // margin-top: 40px;
   align-items: center;
-  // width: 320px;
 
   li {
     @include poppins(400);
@@ -61,7 +56,6 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  // align-items: center;
 }
 
 .closed {
