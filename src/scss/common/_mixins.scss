@@ -52,3 +52,10 @@ screen types:
     background-image: $_gradient_button_clicked;
   }
 }
+
+@mixin transition($props...) {
+  transition-property: #{join($props, ', ')};
+  transition-duration: $_transition_duration;
+  transition-timing-function: $_transition_timing_function;
+  transition-delay: 0;
+}
