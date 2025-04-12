@@ -27,6 +27,11 @@
     height: 56px;
     margin-bottom: 16px;
     display: block;
+
+    &:active,
+    &:hover {
+      background-image: $_gradient_button_clicked;
+    }
   }
 
   .cookies-decline {
@@ -43,7 +48,8 @@
       @include gradient-text();
     }
 
-    &:active {
+    &:active,
+    &:hover {
       background: $_decline_clicked padding-box, $_gradient_button border-box;
     }
   }

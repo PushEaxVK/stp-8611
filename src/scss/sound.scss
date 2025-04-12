@@ -45,6 +45,7 @@
   width: 260px;
   height: 56px;
   background: #fffefe;
+  @include transition(background);
 }
 
 .sound-cta-p {
@@ -57,7 +58,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-.sound-cta:hover {
+.sound-cta:hover,
+.sound-cta:active,
+.sound-cta:focus {
   background: #efefef;
 }
 

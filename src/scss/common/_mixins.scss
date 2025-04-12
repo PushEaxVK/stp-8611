@@ -52,3 +52,43 @@ screen types:
     background-image: $_gradient_button_clicked;
   }
 }
+
+@mixin transition($props...) {
+  $propsList: ();
+  @each $prop in $props {
+    $propsList: append($propsList, $prop, comma);
+  }
+  transition-property: #{$propsList};
+  transition-duration: $_transition_duration;
+  transition-timing-function: $_transition_timing_function;
+  transition-delay: 0;
+}
+
+@mixin gradientTransition($toGradient, $toColor: #fff) {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: $toGradient;
+    background-color: $toColor;
+    opacity: 0;
+    @include transition(opacity);
+    z-index: 0;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    opacity: 1;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+}

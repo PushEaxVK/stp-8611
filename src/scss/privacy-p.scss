@@ -9,9 +9,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  // gap: 10px;
   border-radius: 12px;
-  // padding: 10px 24px;
   width: 155px;
   height: 47px;
 
@@ -20,13 +18,8 @@
   background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
   color: #fff;
   margin-bottom: 24px;
-}
-.pp-back-link:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(249, 115, 22, 0.7) 0%,
-    rgba(236, 72, 153, 0.7) 100%
-  );
+
+  @include gradientTransition($_gradient_button_clicked);
 }
 
 .pp_box {
@@ -37,7 +30,6 @@
 
 .page_p_p h1 {
   font-weight: 600;
-  // font-size: 24px;
   @include font(24, 36);
   background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
   background-clip: text;
@@ -53,7 +45,6 @@
 
 .page_p_p h2 {
   font-weight: 600;
-  // font-size: 16px;
   @include font(16, 24);
   color: #000;
   margin-bottom: 24px;
@@ -61,7 +52,6 @@
 
 .page_p_p p {
   font-weight: 400;
-  // font-size: 14px;
   @include font(14, 21);
   color: #000;
 }
@@ -81,9 +71,7 @@
 }
 
 .page_p_p li a {
-  // color: rgb(125, 125, 235);
   text-decoration: underline;
-  // transition: color 0.3s;
 }
 
 @media (min-width: 1200px) {
