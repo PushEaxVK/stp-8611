@@ -12,10 +12,7 @@
     display: block;
     padding: 10px 24px;
 
-    &:active,
-    &:hover {
-      background-image: $_gradient_button_clicked;
-    }
+    @include gradientTransition($_gradient_button_clicked);
   }
 
   .cookies-policy-block {

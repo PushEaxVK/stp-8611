@@ -51,14 +51,8 @@
   height: 65px;
   flex-shrink: 0;
   background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
-}
 
-.home-cta:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(249, 115, 22, 0.7) 0%,
-    rgba(236, 72, 153, 0.7) 100%
-  );
+  @include gradientTransition($_gradient_button_clicked);
 }
 
 .home-cta-p {
@@ -155,6 +149,5 @@
   .home-cta {
     width: 184px;
     height: 65px;
-    background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
   }
 }

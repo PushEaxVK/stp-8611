@@ -84,6 +84,7 @@ section {
       @include transition(color);
 
       position: relative;
+      display: block;
 
       &::after {
         content: attr(data-text);

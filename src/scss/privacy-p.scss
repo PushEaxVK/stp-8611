@@ -18,13 +18,8 @@
   background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
   color: #fff;
   margin-bottom: 24px;
-}
-.pp-back-link:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(249, 115, 22, 0.7) 0%,
-    rgba(236, 72, 153, 0.7) 100%
-  );
+
+  @include gradientTransition($_gradient_button_clicked);
 }
 
 .pp_box {
