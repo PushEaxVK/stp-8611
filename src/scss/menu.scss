@@ -15,10 +15,7 @@
   z-index: 2000;
   opacity: 1;
 
-  transition-property: transform, opacity;
-  transition-duration: 350ms;
-  transition-timing-function: ease;
-  transition-delay: 0;
+  @include transition(transform, opacity);
 
   &.closed {
     opacity: 0;
@@ -57,10 +54,7 @@
     @include font(16, 24);
 
     a {
-      transition-property: color;
-      transition-duration: 400ms;
-      transition-timing-function: ease;
-      transition-delay: 0;
+      @include transition(color);
       position: relative;
 
       &::after {
@@ -73,10 +67,9 @@
         @include gradient-text();
         background-position: left;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 400ms;
-        transition-timing-function: ease;
-        transition-delay: 0;
+
+        @include transition(opacity);
+
         pointer-events: none;
       }
 

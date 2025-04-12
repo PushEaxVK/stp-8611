@@ -15,3 +15,7 @@ $_gradient_decline: linear-gradient(90deg, #fff7ed 0%, #fdf2f8 100%);
 $_decline_clicked: linear-gradient(90deg, #efefef 0%, #efefef 100%);
 
 $_light_bg_color: #fffefe;
+
+// Transition vars
+$_transition_duration: 350ms;
+$_transition_timing_function: ease;

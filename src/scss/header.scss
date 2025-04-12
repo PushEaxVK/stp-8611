@@ -81,10 +81,8 @@ section {
     column-gap: 12px;
 
     a {
-      transition-property: color;
-      transition-duration: 400ms;
-      transition-timing-function: ease;
-      transition-delay: 0;
+      @include transition(color);
+
       position: relative;
 
       &::after {
@@ -97,10 +95,9 @@ section {
         @include gradient-text();
         background-position: left;
         opacity: 0;
-        transition-property: opacity;
-        transition-duration: 400ms;
-        transition-timing-function: ease;
-        transition-delay: 0;
+
+        @include transition(opacity);
+
         pointer-events: none;
       }
 
