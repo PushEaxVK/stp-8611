@@ -11,6 +11,11 @@
     @include font(18, 27);
     display: block;
     padding: 10px 24px;
+
+    &:active,
+    &:hover {
+      background-image: $_gradient_button_clicked;
+    }
   }
 
   .cookies-policy-block {
